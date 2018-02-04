@@ -1,0 +1,140 @@
+li.m {
+	list-style-type: none;
+}
+ul.menu{
+	position: relative;
+	text-decoration: none;
+	font-size: 25px;
+}
+ul.submenu{
+	position: absolute;
+	display: none;
+	text-decoration: none;
+	background-color: grey;
+}
+ul.menu:hover ul.submenu{
+	display: block;
+}
+a.sm{
+	color: red;
+}
+body{
+	background: url(fon.jpg);
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #434343
+}
+img.logo{
+	width: 75px;
+	height: 75px;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+section{
+    color: white;
+} 
+a{
+	text-decoration: none;
+	color: orange;
+}
+content{
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+article{
+	width: 100%;
+	max-width: 800px;
+	min-width: 300px;
+	background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+     margin-right: 2%;
+     padding-right: 20px;
+     padding-left: 20px;
+}
+aside{
+	width: 100%;
+	max-width: 300px;
+    min-width: 150px;
+	background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+     font-size: 22px;
+}
+li.mq{
+	border-bottom: 2px solid black;
+	list-style-type: none;
+	background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+}
+div.z{
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 30px;
+}
+img.konj{
+	width: 230px;
+	height: 150px;
+}
+div.k{
+	float: right;
+	width: 430px;
+}
+footer{
+	background-color: #434343;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+}
+img.superman{
+	width: 200px;
+	height: 170px;
+}
+div.footer{
+	font-size: 30px;
+	font-family: cursive;
+	color: blue;
+	animation: blink 5s linear infinite;
+
+}
+@keyframes blink{
+	0%{color: rgba(0,77,255,1);}
+	50%{color: rgba(0,77,255,0);}
+	100%{color: rgba(0,77,255,1);}
+}
+@media screen and (min-width: 100px) and (max-width: 768px){
+	aside{
+		width: 100%;
+		margin-right: 0%;
+	}
+	article{
+		margin-left: 0px;
+		margin-top: 25px;
+		width: 100%;
+	}
+	content{
+		display: block;
+	}
+	footer{
+		display: block;
+	}
+}
